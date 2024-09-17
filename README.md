@@ -75,7 +75,7 @@ JOIN
     Categorías c ON a.CategoríaID = c.CategoríaID
 WHERE 
     a.Estado = 'en venta';
-
+```
 ### Buscar Antigüedades por Categoría y Rango de Precio
 
 ```sql
@@ -90,7 +90,7 @@ WHERE
     c.Nombre = 'Muebles Antiguos'
     AND a.Precio BETWEEN 500 AND 2000
     AND a.Estado = 'en venta';
-
+```
 ### Historial de Ventas de un Cliente Específico
 
 ```sql
@@ -107,7 +107,7 @@ JOIN
     Usuarios u ON t.CompradorID = u.UsuarioID
 WHERE 
     u.Nombre = 'Juan Pérez';
-
+```
 ### Obtener el Total de Ventas Realizadas en un Periodo de Tiempo
 
 ```sql
@@ -117,7 +117,7 @@ FROM
     Transacciones t
 WHERE 
     t.FechaTransacción BETWEEN '2024-09-17' AND '2024-09-30';
-
+```
 ### Encontrar los Clientes Más Activos (Con Más Compras Realizadas)
 
 ```sql
@@ -133,7 +133,7 @@ GROUP BY
 ORDER BY 
     NúmeroCompras DESC
 LIMIT 10;
-
+```
 ### Listar las Antigüedades Más Populares por Número de Visitas o Consultas
 
 ```sql
@@ -149,7 +149,7 @@ GROUP BY
 ORDER BY 
     NúmeroConsultas DESC
 LIMIT 10;
-
+```
 ### Listar las Antigüedades Vendidas en un Rango de Fechas Específico
 
 ```sql
@@ -169,7 +169,7 @@ JOIN
     Usuarios u2 ON t.CompradorID = u2.UsuarioID
 WHERE 
     t.FechaTransacción BETWEEN '2024-09-17' AND '2024-09-30';
-
+```
 
 ### Obtener un Informe de Inventario Actual
 
@@ -185,3 +185,4 @@ WHERE
     a.Estado = 'en venta'
 GROUP BY 
     c.Nombre;
+```
