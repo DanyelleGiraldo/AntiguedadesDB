@@ -4,6 +4,8 @@
 
 `AntiguedadesDB` es una base de datos diseñada para la gestión de un negocio de antigüedades. Facilita el seguimiento de roles de usuario, antigüedades, categorías, fotos y transacciones. Este README proporciona una visión general de la estructura de la base de datos, las tablas incluidas, y ejemplos de consultas que pueden ser útiles para extraer información relevante.
 
+![](https://github.com/DanyelleGiraldo/AntiguedadesDB/blob/main/AntiguedadesDB.png)
+
 ## Estructura de la Base de Datos
 
 La base de datos se llama `AntiguedadesDB` y está compuesta por las siguientes tablas:
